@@ -1,0 +1,33 @@
+#get-started {
+  background: #5f37ef;
+  padding: 78px 0;
+
+  .text_wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @media(max-width: 991.98px){
+        flex-direction: column;
+    }
+
+    .text {
+      font-weight: normal;
+      font-size: 36px;
+      line-height: 52px;
+      color: #ffffff;
+      width: calc(100% - 280px);
+
+      @media(max-width: 991.98px){
+          width: 100%;
+          margin-bottom: 50px;
+          text-align: center;
+      }
+
+      @media(max-width: 576px){
+          font-size: 28px;
+          line-height: unset;
+      }
+    }
+  }
+}
