@@ -1,0 +1,117 @@
+#agencies {
+  padding: 130px 0 330px;
+  overflow: hidden;
+
+  @media(max-width: 991.98px){
+      padding-bottom: 100px;
+  }
+
+  .section-title {
+    max-width: 520px;
+    margin-bottom: 100px;
+  }
+
+  .content {
+    background: #ffffff;
+    box-shadow: 0px 18px 52.8537px rgba(215, 228, 249, 0.5);
+    border-radius: 20px;
+    width: 100%;
+    padding: 100px 80px 80px;
+    max-width: 700px;
+    margin: 0 auto;
+    position: relative;
+    box-sizing: border-box;
+
+
+    @media(max-width: 576px){
+        padding: 50px;
+    }
+
+    .absolute{
+        position: absolute;
+
+        &.dots-g{
+            top: 100%;
+            left: 0;
+            transform: translate(-50%, -70%);
+            z-index: -1;
+        }
+
+        &.dots-r{
+            top: 0%;
+            right: 0;
+            transform: translate(50%, 0);
+            z-index: -1;
+        }
+    }
+
+    .quote{
+        position: absolute;
+        width: 235px;
+        top: 30px;
+        left: 50%;
+        transform: translateX(-50%);
+
+        img{
+            width: 100%;
+            object-fit: contain;
+        }
+    }
+
+    .text {
+      font-weight: normal;
+      font-size: 26.7px;
+      text-align: center;
+      color: #94a2b3;
+      position: relative;
+      z-index: 2;
+    }
+  }
+
+  .float-images{
+      position: relative;
+
+      .absolute{
+          position: absolute;
+
+          @media(max-width: 1440px){
+              display: none;
+          }
+
+          &.p-1{
+              top: 0;
+              left: 0;
+              transform: translate(0%, -100%);
+          }
+
+          &.p-2{
+            top: 50%;
+            transform: translate(-100%, -50%);
+            left: -100px;
+        }
+
+        &.p-3{
+            top: 100%;
+            left: -100px;
+        }
+
+        &.p-4{
+            right: 0;
+            top: 0;
+            transform: translate(0%, -100%);
+        }
+
+        &.p-5{
+            right: 0px;
+            top: 50%;
+            transform: translate(100%, -50%);
+        }
+
+        &.p-6{
+            right: 0px;
+            top: 100%;
+            transform: translate(0%, 100%);
+        }
+      }
+  }
+}
